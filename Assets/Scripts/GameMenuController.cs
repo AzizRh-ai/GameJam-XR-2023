@@ -26,12 +26,11 @@ public class GameMenuController : MonoBehaviour
     public void PauseButtonPressed(InputAction.CallbackContext context)
     {
         // si l'action sur le bouton est fait
-        if (context.performed)
-            // on affiche le menu
-            ShowUiWristMenu();
+        // on affiche le menu
+        ShowUiWristMenu();
     }
 
-    private void ShowUiWristMenu()
+    public void ShowUiWristMenu()
     {
         // affiche ou pas le menu suivant la valeur de isActiveWristUI
         WristMenu.SetActive(!isActiveWristUi);
