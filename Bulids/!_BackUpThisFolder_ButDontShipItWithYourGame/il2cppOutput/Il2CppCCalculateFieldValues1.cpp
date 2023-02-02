@@ -21300,7 +21300,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4643[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4646[4] = 
 {
 	0,static_cast<int32_t>(offsetof(ConformanceAutomationFeature_t0C2E5D391DBCC81F1B86F2D7E34719B7D292BFF7_StaticFields, ___xrInstance_17)),static_cast<int32_t>(offsetof(ConformanceAutomationFeature_t0C2E5D391DBCC81F1B86F2D7E34719B7D292BFF7_StaticFields, ___xrSession_18)),0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4649[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4648[2] = 
 {
 	static_cast<int32_t>(offsetof(GameMenuController_t0E6A598BAF61FF78D63A529DE3B469A13F9621E8, ___WristMenu_4)),static_cast<int32_t>(offsetof(GameMenuController_t0E6A598BAF61FF78D63A529DE3B469A13F9621E8, ___isActiveWristUi_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4652[1] = 
