@@ -24,14 +24,20 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    public void IncScore()
+    public void IncScore(int point)
     {
-        score++;
+        score = score + point;
         scoreText.text = score + " POINTS";
         if (HighScore < score)
         {
             PlayerPrefs.SetInt("HighScore", score);
         }
+    }
+
+    public void DecScore(int scoreValue)
+    {
+        score = score - scoreValue;
+        scoreText.text = score + " POINTS";
     }
     // Update is called once per frame
     void Update()
