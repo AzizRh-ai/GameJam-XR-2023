@@ -92,65 +92,69 @@ extern void GameMenuController_RestartGame_mED538581943EDADDD98E1D49A12B93A0B295
 extern void GameMenuController_ExitGame_m117883ABB26245280DB37D8FE11B0F5092DA97EB (void);
 // 0x00000028 System.Void GameMenuController::.ctor()
 extern void GameMenuController__ctor_mDCC0AA00F4572D25A462C5A1C1CEF1C9DABE3117 (void);
-// 0x00000029 System.Void IDamageable::damage(System.Int32)
-// 0x0000002A System.Void IMovement::Move()
-// 0x0000002B System.Single IMovement::get_SpeedMovement()
-// 0x0000002C System.Void IMovement::set_SpeedMovement(System.Single)
-// 0x0000002D System.Void MicController::Start()
+// 0x00000029 System.Void Haptique_Script::OnCollisionEnter(UnityEngine.Collision)
+extern void Haptique_Script_OnCollisionEnter_mA8F0713D8DB5B1919F3C1647DD84004BC16DEAB6 (void);
+// 0x0000002A System.Void Haptique_Script::.ctor()
+extern void Haptique_Script__ctor_m40D98ED20F201B01F69D9855675D33D35CD94F6B (void);
+// 0x0000002B System.Void IDamageable::damage(System.Int32)
+// 0x0000002C System.Void IMovement::Move()
+// 0x0000002D System.Single IMovement::get_SpeedMovement()
+// 0x0000002E System.Void IMovement::set_SpeedMovement(System.Single)
+// 0x0000002F System.Void MicController::Start()
 extern void MicController_Start_m5028D01E0A6B10F755D410C3358380C0B711FD49 (void);
-// 0x0000002E System.Void MicController::Update()
+// 0x00000030 System.Void MicController::Update()
 extern void MicController_Update_mD1BCF95ACB0D50EB4E4D16ABC41464FB9DD22CE2 (void);
-// 0x0000002F System.Single MicController::GetAudioFromMic()
+// 0x00000031 System.Single MicController::GetAudioFromMic()
 extern void MicController_GetAudioFromMic_mA438CA4493CFCA2B68EB1BC6FF1C7CA70A904DA6 (void);
-// 0x00000030 System.Void MicController::MicToAudio()
+// 0x00000032 System.Void MicController::MicToAudio()
 extern void MicController_MicToAudio_mB956F9640CAB4A0A8E00C646A88A05FE4C055C44 (void);
-// 0x00000031 System.Single MicController::GetIntensityAudioClip(System.Int32,UnityEngine.AudioClip)
+// 0x00000033 System.Single MicController::GetIntensityAudioClip(System.Int32,UnityEngine.AudioClip)
 extern void MicController_GetIntensityAudioClip_m188D05464A11F638AF859FDDDC9CE0FE8D79B8D4 (void);
-// 0x00000032 System.Void MicController::.ctor()
+// 0x00000034 System.Void MicController::.ctor()
 extern void MicController__ctor_m176B29DC2C76846E756C0A368D0B14C2B7857992 (void);
-// 0x00000033 System.Void NotKineAnymore::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000035 System.Void NotKineAnymore::OnCollisionEnter(UnityEngine.Collision)
 extern void NotKineAnymore_OnCollisionEnter_m8075264B55A35B202B4DC2DF4A2FE61FF824B48B (void);
-// 0x00000034 System.Void NotKineAnymore::.ctor()
+// 0x00000036 System.Void NotKineAnymore::.ctor()
 extern void NotKineAnymore__ctor_mFDD1D59508B497A1A97E8BE4454780EB32A805D2 (void);
-// 0x00000035 System.Void Object::Start()
+// 0x00000037 System.Void Object::Start()
 extern void Object_Start_m6A00E22B86C928FC655446733482D75C70A20DEF (void);
-// 0x00000036 System.Void Object::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000038 System.Void Object::OnCollisionEnter(UnityEngine.Collision)
 extern void Object_OnCollisionEnter_m1EFEB45E19A3F2C86506FDDA34D085EAF224804D (void);
-// 0x00000037 System.Void Object::Update()
+// 0x00000039 System.Void Object::Update()
 extern void Object_Update_m1B9D6E580ADC8B109D91FA2554CC4AD601DE80C9 (void);
-// 0x00000038 System.Void Object::.ctor()
+// 0x0000003A System.Void Object::.ctor()
 extern void Object__ctor_m35AD0F68EA6289DEEA6B56F4996093F8A259069B (void);
-// 0x00000039 System.Single PlayerController::get_SpeedMovement()
+// 0x0000003B System.Single PlayerController::get_SpeedMovement()
 extern void PlayerController_get_SpeedMovement_m59B5BF927024BDBC745BBD301BE4E334806C64AB (void);
-// 0x0000003A System.Void PlayerController::set_SpeedMovement(System.Single)
+// 0x0000003C System.Void PlayerController::set_SpeedMovement(System.Single)
 extern void PlayerController_set_SpeedMovement_mD1639469DBE69AC81CF4A8DEC8B931699A56318B (void);
-// 0x0000003B System.Void PlayerController::damage(System.Int32)
+// 0x0000003D System.Void PlayerController::damage(System.Int32)
 extern void PlayerController_damage_m494C9826D29522CC9785496A5AD1B714145B012A (void);
-// 0x0000003C System.Void PlayerController::Move()
+// 0x0000003E System.Void PlayerController::Move()
 extern void PlayerController_Move_m68BFC8B882D42955A212B23E7D1DDD56CC87DB09 (void);
-// 0x0000003D System.Void PlayerController::.ctor()
+// 0x0000003F System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x0000003E System.Void ScaleObjectAudioClip::Update()
+// 0x00000040 System.Void ScaleObjectAudioClip::Update()
 extern void ScaleObjectAudioClip_Update_mF15012808AD5459B37D973C9B6752D3867206C24 (void);
-// 0x0000003F System.Void ScaleObjectAudioClip::.ctor()
+// 0x00000041 System.Void ScaleObjectAudioClip::.ctor()
 extern void ScaleObjectAudioClip__ctor_m9747A053BB302609292402D39201ACDC7E425312 (void);
-// 0x00000040 System.Void ScoreManager::Awake()
+// 0x00000042 System.Void ScoreManager::Awake()
 extern void ScoreManager_Awake_mB3BB0D0448D4C240C4572B7395AF328615E76D8A (void);
-// 0x00000041 System.Void ScoreManager::Start()
+// 0x00000043 System.Void ScoreManager::Start()
 extern void ScoreManager_Start_m7E00370AD0134DB3AEA647B9BA69055725AA83FE (void);
-// 0x00000042 System.Void ScoreManager::IncScore(System.Int32)
+// 0x00000044 System.Void ScoreManager::IncScore(System.Int32)
 extern void ScoreManager_IncScore_m6B91138A16E846DA72BBF41248D1D56768C0B3D7 (void);
-// 0x00000043 System.Void ScoreManager::DecScore(System.Int32)
+// 0x00000045 System.Void ScoreManager::DecScore(System.Int32)
 extern void ScoreManager_DecScore_m09B70CF5852E72CB6EA7838145E59209F849FF73 (void);
-// 0x00000044 System.Void ScoreManager::Update()
+// 0x00000046 System.Void ScoreManager::Update()
 extern void ScoreManager_Update_m68EC29B04B4118B51E293C1C3077D87FF3FE7811 (void);
-// 0x00000045 System.Void ScoreManager::.ctor()
+// 0x00000047 System.Void ScoreManager::.ctor()
 extern void ScoreManager__ctor_mE5C264C34A9CBBAB72DCF99CCCC9841AF8F9FEE6 (void);
-// 0x00000046 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x00000048 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x00000047 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x00000049 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-static Il2CppMethodPointer s_methodPointers[71] = 
+static Il2CppMethodPointer s_methodPointers[73] = 
 {
 	fractu_Start_mB5F49DCDFA5E3285380921FE0A9E4E0CF792A881,
 	fractu_Update_mEAB81212E55C4C5BCAEB28CAE5DBE2F4543DDBB4,
@@ -192,6 +196,8 @@ static Il2CppMethodPointer s_methodPointers[71] =
 	GameMenuController_RestartGame_mED538581943EDADDD98E1D49A12B93A0B295E53E,
 	GameMenuController_ExitGame_m117883ABB26245280DB37D8FE11B0F5092DA97EB,
 	GameMenuController__ctor_mDCC0AA00F4572D25A462C5A1C1CEF1C9DABE3117,
+	Haptique_Script_OnCollisionEnter_mA8F0713D8DB5B1919F3C1647DD84004BC16DEAB6,
+	Haptique_Script__ctor_m40D98ED20F201B01F69D9855675D33D35CD94F6B,
 	NULL,
 	NULL,
 	NULL,
@@ -224,7 +230,7 @@ static Il2CppMethodPointer s_methodPointers[71] =
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 };
-static const int32_t s_InvokerIndices[71] = 
+static const int32_t s_InvokerIndices[73] = 
 {
 	5110,
 	5110,
@@ -266,6 +272,8 @@ static const int32_t s_InvokerIndices[71] =
 	5110,
 	5110,
 	5110,
+	4047,
+	5110,
 	0,
 	0,
 	0,
@@ -302,7 +310,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	71,
+	73,
 	s_methodPointers,
 	0,
 	NULL,

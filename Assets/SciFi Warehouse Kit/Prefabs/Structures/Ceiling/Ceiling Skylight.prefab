@@ -324,17 +324,17 @@ MonoBehaviour:
     - Projectile
     triggerKey: 0
   fractureOptions:
-    fragmentCount: 55
+    fragmentCount: 80
     xAxis: 1
     yAxis: 1
     zAxis: 1
-    detectFloatingFragments: 0
+    detectFloatingFragments: 1
     asynchronous: 0
     insideMaterial: {fileID: 2100000, guid: 5d82eb612157cf846bf67968cdb100a7, type: 2}
     textureScale: {x: 1, y: 1}
     textureOffset: {x: 0, y: 0}
   refractureOptions:
-    enableRefracturing: 0
+    enableRefracturing: 1
     maxRefractureCount: 1
     invokeCallbacks: 0
   callbackOptions:
