@@ -12,8 +12,10 @@ public class NotKineAnymore : MonoBehaviour
         collision.rigidbody.constraints = RigidbodyConstraints.None;
 
         GameObject Handz = this.GetComponent<GameObject>();
+
         if (Handz.name == "ARight")
         {
+            
             InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
             device.SendHapticImpulse(0, 0.4f, 0.1f);
         }
