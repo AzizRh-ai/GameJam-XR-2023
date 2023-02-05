@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7928527120184664208}
   - component: {fileID: 4541157745902113228}
-  - component: {fileID: 7135361524985232845}
   m_Layer: 0
   m_Name: Bone004
   m_TagString: Projectile
@@ -25,8 +24,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722107820297163069}
-  m_LocalRotation: {x: -4.654397e-10, y: -7.3645634e-10, z: 0.0056381575, w: 0.99998415}
-  m_LocalPosition: {x: -0.031768426, y: 0.0000000020816922, z: 5.728858e-10}
+  m_LocalRotation: {x: -0.0000000014256328, y: 0.000000014626478, z: 0.005638176,
+    w: 0.99998415}
+  m_LocalPosition: {x: -0.03176845, y: -0.0000000032712553, z: -0.0000000046042583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47,18 +47,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.035448518, y: 0.029337293, z: 0.026850179}
   m_Center: {x: -0.01251506, y: 0.0018889217, z: -0.0017006323}
---- !u!114 &7135361524985232845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722107820297163069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &783899978110124754
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,6 +59,7 @@ GameObject:
   - component: {fileID: 8806692217837149231}
   - component: {fileID: 2776022363655349765}
   - component: {fileID: 9077099907578920433}
+  - component: {fileID: 7790713783822206917}
   m_Layer: 0
   m_Name: ARight
   m_TagString: Projectile
@@ -131,7 +120,15 @@ MonoBehaviour:
   m_RigLayers:
   - m_Rig: {fileID: 4417497135437096536}
     m_Active: 1
-  m_Effectors: []
+  m_Effectors:
+  - m_Transform: {fileID: 4103490841985508866}
+    m_Style:
+      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
 --- !u!114 &9077099907578920433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +156,20 @@ MonoBehaviour:
   - {fileID: 8073126765226009081}
   - {fileID: 8078439623435648080}
   - {fileID: 3415093267068981371}
+--- !u!64 &7790713783822206917
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783899978110124754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1701368654414553199
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +282,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4247088113475250023}
   - component: {fileID: 7112675055725810451}
-  - component: {fileID: 6484165317332494820}
   m_Layer: 0
   m_Name: Bone002
   m_TagString: Projectile
@@ -286,9 +296,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2804400153155417748}
-  m_LocalRotation: {x: -0.0000028609038, y: -0.000000017696719, z: -0.0034806288,
-    w: 0.999994}
-  m_LocalPosition: {x: -0.045281857, y: 0.000000003666617, z: 6.2272437e-10}
+  m_LocalRotation: {x: -0.0000028528723, y: -0.000000009553786, z: -0.0034807022,
+    w: 0.9999939}
+  m_LocalPosition: {x: -0.045281865, y: 0.0000000037252903, z: -0.0000000022300917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -309,18 +319,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04705528, y: 0.037450135, z: 0.033684324}
   m_Center: {x: -0.010129337, y: 0.0028213207, z: -0.0016289527}
---- !u!114 &6484165317332494820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2804400153155417748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4090101765830378309
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +380,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8073126765226009081}
   - component: {fileID: 5072486919355646026}
-  - component: {fileID: 6655369170056339484}
   m_Layer: 0
   m_Name: Bone005
   m_TagString: Projectile
@@ -397,8 +394,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4151906665822671454}
-  m_LocalRotation: {x: 6.264355e-10, y: 0.0000000062736474, z: -0.009354053, w: 0.99995625}
-  m_LocalPosition: {x: -0.028710105, y: -0.000000058476626, z: 5.5986826e-10}
+  m_LocalRotation: {x: -0.000000018430837, y: -0.0000000029583083, z: -0.009354063,
+    w: 0.99995625}
+  m_LocalPosition: {x: -0.0287101, y: -0.00000005549107, z: -0.000000014093964}
   m_LocalScale: {x: 1.000001, y: 1.000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -419,18 +417,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03225002, y: 0.029337293, z: 0.026850179}
   m_Center: {x: -0.04305798, y: 0.001888935, z: -0.0017006337}
---- !u!114 &6655369170056339484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4151906665822671454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4286088908572088053
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,8 +542,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6964808461941505249}
-  m_LocalRotation: {x: -0.70709085, y: 0.00475446, z: -0.015725762, w: 0.70693195}
-  m_LocalPosition: {x: -0.054520085, y: -0.00000005975403, z: 3.7849526e-10}
+  m_LocalRotation: {x: -0.70709085, y: 0.004754428, z: -0.015725762, w: 0.70693195}
+  m_LocalPosition: {x: -0.054520108, y: -0.00000006042899, z: -0.000000019791022}
   m_LocalScale: {x: 0.999999, y: 1, z: 0.999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -666,7 +652,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5788240283866926416}
   - component: {fileID: 3514578652834160356}
-  - component: {fileID: 6823772277926870220}
   m_Layer: 0
   m_Name: Bone001
   m_TagString: Projectile
@@ -703,18 +688,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.060447767, y: 0.037450135, z: 0.033684324}
   m_Center: {x: -0.025014412, y: 0.0028213232, z: -0.0016289548}
---- !u!114 &6823772277926870220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7540794402674232337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7827046086560694489
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +698,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8543438631812376801}
   - component: {fileID: 4542150652511511491}
-  - component: {fileID: 3295547509594878168}
   m_Layer: 0
   m_Name: Bone003
   m_TagString: Projectile
@@ -740,8 +712,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7827046086560694489}
-  m_LocalRotation: {x: -2.0151321e-10, y: 0.00000002551347, z: 0.0047924337, w: 0.99998856}
-  m_LocalPosition: {x: -0.052629665, y: 0.0000000028859823, z: 0.0000000036346723}
+  m_LocalRotation: {x: -0.0000000012764755, y: 0.000000012426166, z: 0.0047924705,
+    w: 0.9999885}
+  m_LocalPosition: {x: -0.052629676, y: 0.000000004277382, z: -0.0000000018625088}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -762,18 +735,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.037438333, y: 0.029337294, z: 0.026850179}
   m_Center: {x: 0.006744685, y: 0.0018889143, z: -0.0017006296}
---- !u!114 &3295547509594878168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7827046086560694489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8279593515827889233
 GameObject:
   m_ObjectHideFlags: 0

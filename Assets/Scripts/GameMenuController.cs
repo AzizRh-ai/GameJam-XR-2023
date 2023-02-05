@@ -13,6 +13,7 @@ public class GameMenuController : MonoBehaviour
 {
     // Ajout UI depuis Unity: Canvas 
     [SerializeField] private GameObject WristMenu;
+    [SerializeField] private GameObject EndMenu;
 
     // Variable boolean pour l'état du menu
     private bool isActiveWristUi = true;
@@ -52,4 +53,11 @@ public class GameMenuController : MonoBehaviour
         // Bye
         Application.Quit();
     }
+
+    public void PauseGameEnd()
+    {
+        Time.timeScale = 0;
+        EndMenu.SetActive(true);
+    }
+
 }

@@ -5,20 +5,31 @@ public class ScoreManager : MonoBehaviour
 {
     // gestion de l'instance
     public static ScoreManager instance;
+    [SerializeField] private GameMenuController gameMenuController;
 
-    [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private TextMeshProUGUI HighScoreText;
-
+    private float time = 2555;
+    private bool timeIsRunning = false;
+    private float timertick = 0f;
     int score = 0;
     int HighScore = 0;
+    [SerializeField] private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI EndscoreText;
+    [SerializeField] private TextMeshProUGUI HighScoreText;
+    public AudioClip gameOverAudio;
+    public AudioClip timerTickAudio;
+    public AudioSource gameOverSound;
+
 
     private void Awake()
     {
         instance = this;
+        HighScore = PlayerPrefs.GetInt("HighScore");
     }
     // Start is called before the first frame update
     void Start()
     {
+        timeIsRunning = true;
         scoreText.text = score + " POINTS";
         HighScoreText.text = "HighScore: " + HighScore;
 
@@ -43,5 +54,42 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
 
+        if (timertick <= 0 && time > 0)
+        {
+            gameOverSound.PlayOneShot(timerTickAudio, 0.30f);
+            timertick = 1f;
+            time -= 1f;
+
+        }
+        if (timeIsRunning)
+        {
+            time -= Time.deltaTime;
+
+            if (time < 0)
+            {
+                gameOverSound.Stop();
+                EndscoreText.text = "Score: " + scoreText.text;
+
+                time = 0;
+                timeIsRunning = false;
+                HighScoreText.text = "HighScore: " + HighScore + " Points";
+                gameOverSound.PlayOneShot(gameOverAudio);
+
+                gameMenuController.PauseGameEnd();
+            }
+        }
+        DisplayTime(time);
+    }
+
+    void DisplayTime(float time)
+    {
+        float minutes = Mathf.FloorToInt(time / 60);
+        float seconds = Mathf.FloorToInt(time % 60);
+        timeText.text = minutes + " : " + seconds;
+    }
+
+    public void AddTime(float addTime)
+    {
+        time += addTime;
     }
 }

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7928527120184664208}
   - component: {fileID: 4541157745902113228}
-  - component: {fileID: 7135361524985232845}
   m_Layer: 0
   m_Name: Bone004
   m_TagString: Projectile
@@ -47,18 +46,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.035448518, y: 0.029337293, z: 0.026850179}
   m_Center: {x: -0.01251506, y: 0.0018889217, z: -0.0017006323}
---- !u!114 &7135361524985232845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722107820297163069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &783899978110124754
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,7 +58,7 @@ GameObject:
   - component: {fileID: 8806692217837149231}
   - component: {fileID: 2776022363655349765}
   - component: {fileID: 9077099907578920433}
-  - component: {fileID: 2824165484594644467}
+  - component: {fileID: 7790713783822206917}
   m_Layer: 0
   m_Name: ALeft
   m_TagString: Projectile
@@ -160,18 +147,20 @@ MonoBehaviour:
   - {fileID: 8073126765226009081}
   - {fileID: 8078439623435648080}
   - {fileID: 3415093267068981371}
---- !u!114 &2824165484594644467
-MonoBehaviour:
+--- !u!64 &7790713783822206917
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783899978110124754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1701368654414553199
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +273,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4247088113475250023}
   - component: {fileID: 7112675055725810451}
-  - component: {fileID: 6484165317332494820}
   m_Layer: 0
   m_Name: Bone002
   m_TagString: Projectile
@@ -322,18 +310,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04705528, y: 0.037450135, z: 0.033684324}
   m_Center: {x: -0.010129337, y: 0.0028213207, z: -0.0016289527}
---- !u!114 &6484165317332494820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2804400153155417748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4090101765830378309
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +371,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8073126765226009081}
   - component: {fileID: 5072486919355646026}
-  - component: {fileID: 3240193773760695947}
   m_Layer: 0
   m_Name: Bone005
   m_TagString: Projectile
@@ -432,18 +407,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03225002, y: 0.029337293, z: 0.026850179}
   m_Center: {x: -0.04305798, y: 0.001888935, z: -0.0017006337}
---- !u!114 &3240193773760695947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4151906665822671454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4286088908572088053
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +642,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5788240283866926416}
   - component: {fileID: 3514578652834160356}
-  - component: {fileID: 6823772277926870220}
   m_Layer: 0
   m_Name: Bone001
   m_TagString: Projectile
@@ -716,18 +678,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.060447767, y: 0.037450135, z: 0.033684324}
   m_Center: {x: -0.025014412, y: 0.0028213232, z: -0.0016289548}
---- !u!114 &6823772277926870220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7540794402674232337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7827046086560694489
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +688,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8543438631812376801}
   - component: {fileID: 4542150652511511491}
-  - component: {fileID: 3295547509594878168}
   m_Layer: 0
   m_Name: Bone003
   m_TagString: Projectile
@@ -775,18 +724,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.037438333, y: 0.029337294, z: 0.026850179}
   m_Center: {x: 0.006744685, y: 0.0018889143, z: -0.0017006296}
---- !u!114 &3295547509594878168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7827046086560694489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8279593515827889233
 GameObject:
   m_ObjectHideFlags: 0
