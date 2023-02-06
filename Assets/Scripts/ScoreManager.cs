@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     [SerializeField] private GameMenuController gameMenuController;
 
-    private float time = 2555;
+    private float time = 40f;
     private bool timeIsRunning = false;
     private float timertick = 0f;
     int score = 0;
@@ -19,7 +19,28 @@ public class ScoreManager : MonoBehaviour
     public AudioClip gameOverAudio;
     public AudioClip timerTickAudio;
     public AudioSource gameOverSound;
+    [SerializeField] private TextMeshProUGUI StartText;
+    [SerializeField] private TextMeshProUGUI StartButton;
 
+    public void OnStartMenu(int count)
+    {
+        //  Texte à choisir, à changer :
+        if (count == 1)
+        {
+            StartText.text = " you managed to escape after days experimentations on your adorable monster body,       humans have done terrible things to you";
+            StartButton.text = "Next";
+        }
+        else if (count == 2)
+        {
+            StartText.text = "now it's time to       MAKE THEM PAY !!";
+            StartButton.text = "Next";
+        }
+        else
+        {
+            StartText.text = "Destroy all you can, let the rage talk !            (please make sure you don't destroy anything IRL)";
+            StartButton.text = "Play !";
+        }
+    }
 
     private void Awake()
     {
