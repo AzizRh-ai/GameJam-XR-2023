@@ -1201,6 +1201,35 @@ struct ParentClipScope_tDAB1300C623213518730D926A970098BECFD9C52_marshaled_com
 	int32_t ___m_Disposed_0;
 };
 
+// UnityEngine.GUILayoutUtility/LayoutCacheState
+struct LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 
+{
+	// System.Int32 UnityEngine.GUILayoutUtility/LayoutCacheState::id
+	int32_t ___id_0;
+	// UnityEngine.GUILayoutGroup UnityEngine.GUILayoutUtility/LayoutCacheState::topLevel
+	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___topLevel_1;
+	// UnityEngineInternal.GenericStack UnityEngine.GUILayoutUtility/LayoutCacheState::layoutGroups
+	GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* ___layoutGroups_2;
+	// UnityEngine.GUILayoutGroup UnityEngine.GUILayoutUtility/LayoutCacheState::windows
+	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___windows_3;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.GUILayoutUtility/LayoutCacheState
+struct LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_pinvoke
+{
+	int32_t ___id_0;
+	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___topLevel_1;
+	GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* ___layoutGroups_2;
+	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___windows_3;
+};
+// Native definition for COM marshalling of UnityEngine.GUILayoutUtility/LayoutCacheState
+struct LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_com
+{
+	int32_t ___id_0;
+	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___topLevel_1;
+	GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* ___layoutGroups_2;
+	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___windows_3;
+};
+
 // System.Delegate
 struct Delegate_t  : public RuntimeObject
 {
@@ -2518,6 +2547,10 @@ inline void Dictionary_2__ctor_m26D30094F62EB94273B024DB6AD146CD142F4202 (Dictio
 {
 	((  void (*) (Dictionary_2_tD74A089D3CFE69E54B1617003276B07F5B82B598*, const RuntimeMethod*))Dictionary_2__ctor_m92E9AB321FBD7147CA109C822D99C8B0610C27B7_gshared)(__this, method);
 }
+// System.Int32 UnityEngine.GUILayoutUtility/LayoutCache::get_id()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LayoutCache_get_id_mC223564DD70C5633178B4A99121331CA58F866A1_inline (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GUILayoutUtility/LayoutCacheState::.ctor(UnityEngine.GUILayoutUtility/LayoutCache)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCacheState__ctor_m01CFF2336336AD63861C0A66669C2176D226B649 (LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478* __this, LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* ___cache0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GUILayoutUtility/LayoutCache::set_id(System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutCache_set_id_m532720FF0F65E8039E37D015910E2F1AE1C9F4FB_inline (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, int32_t ___value0, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.GUIUtility::Internal_GetControlID_Injected(System.Int32,UnityEngine.FocusType,UnityEngine.Rect&)
@@ -9403,7 +9436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUILayoutUtility_Begin_m701551F1F833A31A
 		NullCheck(L_10);
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_11 = L_10->___layoutGroups_2;
 		NullCheck(L_11);
-		VirtualActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_11);
+		VirtualActionInvoker0::Invoke(13 /* System.Void System.Collections.Stack::Clear() */, L_11);
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_12 = ((GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_il2cpp_TypeInfo_var))->___current_2;
 		NullCheck(L_12);
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_13 = L_12->___layoutGroups_2;
@@ -9411,7 +9444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUILayoutUtility_Begin_m701551F1F833A31A
 		NullCheck(L_14);
 		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_15 = L_14->___topLevel_1;
 		NullCheck(L_13);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_13, L_15);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_13, L_15);
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_16 = ((GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_il2cpp_TypeInfo_var))->___current_2;
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_17 = V_0;
 		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_18 = (GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D*)il2cpp_codegen_object_new(GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D_il2cpp_TypeInfo_var);
@@ -9496,7 +9529,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUILayoutUtility_BeginContainer_m34C50FF
 		NullCheck(L_5);
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_6 = L_5->___layoutGroups_2;
 		NullCheck(L_6);
-		VirtualActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_6);
+		VirtualActionInvoker0::Invoke(13 /* System.Void System.Collections.Stack::Clear() */, L_6);
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_7 = ___cache0;
 		NullCheck(L_7);
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_8 = L_7->___layoutGroups_2;
@@ -9504,7 +9537,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUILayoutUtility_BeginContainer_m34C50FF
 		NullCheck(L_9);
 		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_10 = L_9->___topLevel_1;
 		NullCheck(L_8);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_8, L_10);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_8, L_10);
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_11 = ___cache0;
 		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_12 = (GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D*)il2cpp_codegen_object_new(GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D_il2cpp_TypeInfo_var);
 		NullCheck(L_12);
@@ -9626,7 +9659,7 @@ IL_0070:
 		NullCheck(L_21);
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_22 = L_21->___layoutGroups_2;
 		NullCheck(L_22);
-		VirtualActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_22);
+		VirtualActionInvoker0::Invoke(13 /* System.Void System.Collections.Stack::Clear() */, L_22);
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_23 = ((GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_il2cpp_TypeInfo_var))->___current_2;
 		NullCheck(L_23);
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_24 = L_23->___layoutGroups_2;
@@ -9634,7 +9667,7 @@ IL_0070:
 		NullCheck(L_25);
 		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_26 = L_25->___topLevel_1;
 		NullCheck(L_24);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_24, L_26);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_24, L_26);
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_27 = ((GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_StaticFields*)il2cpp_codegen_static_fields_for(GUILayoutUtility_t48D00CD11CFC1E09E8EC2E51D59E735F5D24836F_il2cpp_TypeInfo_var))->___current_2;
 		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_28 = V_0;
 		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_29 = (GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D*)il2cpp_codegen_object_new(GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D_il2cpp_TypeInfo_var);
@@ -10196,6 +10229,86 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUILayoutUtility_Internal_MoveWindow_Inj
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Conversion methods for marshalling of: UnityEngine.GUILayoutUtility/LayoutCacheState
+IL2CPP_EXTERN_C void LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshal_pinvoke(const LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478& unmarshaled, LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_pinvoke& marshaled)
+{
+	Exception_t* ___topLevel_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'topLevel' of type 'LayoutCacheState': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___topLevel_1Exception, NULL);
+}
+IL2CPP_EXTERN_C void LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshal_pinvoke_back(const LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_pinvoke& marshaled, LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478& unmarshaled)
+{
+	Exception_t* ___topLevel_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'topLevel' of type 'LayoutCacheState': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___topLevel_1Exception, NULL);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.GUILayoutUtility/LayoutCacheState
+IL2CPP_EXTERN_C void LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshal_pinvoke_cleanup(LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: UnityEngine.GUILayoutUtility/LayoutCacheState
+IL2CPP_EXTERN_C void LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshal_com(const LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478& unmarshaled, LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_com& marshaled)
+{
+	Exception_t* ___topLevel_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'topLevel' of type 'LayoutCacheState': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___topLevel_1Exception, NULL);
+}
+IL2CPP_EXTERN_C void LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshal_com_back(const LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_com& marshaled, LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478& unmarshaled)
+{
+	Exception_t* ___topLevel_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'topLevel' of type 'LayoutCacheState': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___topLevel_1Exception, NULL);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.GUILayoutUtility/LayoutCacheState
+IL2CPP_EXTERN_C void LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshal_com_cleanup(LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478_marshaled_com& marshaled)
+{
+}
+// System.Void UnityEngine.GUILayoutUtility/LayoutCacheState::.ctor(UnityEngine.GUILayoutUtility/LayoutCache)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCacheState__ctor_m01CFF2336336AD63861C0A66669C2176D226B649 (LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478* __this, LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* ___cache0, const RuntimeMethod* method) 
+{
+	{
+		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_0 = ___cache0;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = LayoutCache_get_id_mC223564DD70C5633178B4A99121331CA58F866A1_inline(L_0, NULL);
+		__this->___id_0 = L_1;
+		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_2 = ___cache0;
+		NullCheck(L_2);
+		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_3 = L_2->___topLevel_1;
+		__this->___topLevel_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___topLevel_1), (void*)L_3);
+		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_4 = ___cache0;
+		NullCheck(L_4);
+		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_5 = L_4->___layoutGroups_2;
+		__this->___layoutGroups_2 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___layoutGroups_2), (void*)L_5);
+		LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* L_6 = ___cache0;
+		NullCheck(L_6);
+		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_7 = L_6->___windows_3;
+		__this->___windows_3 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___windows_3), (void*)L_7);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LayoutCacheState__ctor_m01CFF2336336AD63861C0A66669C2176D226B649_AdjustorThunk (RuntimeObject* __this, LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* ___cache0, const RuntimeMethod* method)
+{
+	LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478*>(__this + _offset);
+	LayoutCacheState__ctor_m01CFF2336336AD63861C0A66669C2176D226B649(_thisAdjusted, ___cache0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 UnityEngine.GUILayoutUtility/LayoutCache::get_id()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayoutCache_get_id_mC223564DD70C5633178B4A99121331CA58F866A1 (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___U3CidU3Ek__BackingField_0;
+		return L_0;
+	}
+}
 // System.Void UnityEngine.GUILayoutUtility/LayoutCache::set_id(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCache_set_id_m532720FF0F65E8039E37D015910E2F1AE1C9F4FB (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, int32_t ___value0, const RuntimeMethod* method) 
 {
@@ -10203,6 +10316,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCache_set_id_m532720FF0F65E8039E37
 		int32_t L_0 = ___value0;
 		__this->___U3CidU3Ek__BackingField_0 = L_0;
 		return;
+	}
+}
+// UnityEngine.GUILayoutUtility/LayoutCacheState UnityEngine.GUILayoutUtility/LayoutCache::get_State()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 LayoutCache_get_State_m02A0EC32067A64E78ED5015914ADD44FEA742B71 (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, const RuntimeMethod* method) 
+{
+	{
+		LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		LayoutCacheState__ctor_m01CFF2336336AD63861C0A66669C2176D226B649((&L_0), __this, /*hidden argument*/NULL);
+		return L_0;
 	}
 }
 // System.Void UnityEngine.GUILayoutUtility/LayoutCache::.ctor(System.Int32)
@@ -10237,7 +10360,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCache__ctor_m73B4DC62A0A7669976C84
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_4 = __this->___layoutGroups_2;
 		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_5 = __this->___topLevel_1;
 		NullCheck(L_4);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_4, L_5);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_4, L_5);
+		return;
+	}
+}
+// System.Void UnityEngine.GUILayoutUtility/LayoutCache::CopyState(UnityEngine.GUILayoutUtility/LayoutCacheState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCache_CopyState_mF256F33437826BC3C529C46B25B1D23BC0FD1597 (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 ___other0, const RuntimeMethod* method) 
+{
+	{
+		LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 L_0 = ___other0;
+		int32_t L_1 = L_0.___id_0;
+		LayoutCache_set_id_m532720FF0F65E8039E37D015910E2F1AE1C9F4FB_inline(__this, L_1, NULL);
+		LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 L_2 = ___other0;
+		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_3 = L_2.___topLevel_1;
+		__this->___topLevel_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___topLevel_1), (void*)L_3);
+		LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 L_4 = ___other0;
+		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_5 = L_4.___layoutGroups_2;
+		__this->___layoutGroups_2 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___layoutGroups_2), (void*)L_5);
+		LayoutCacheState_t5BDD366BB21F71D46FB9ED907554C06E6967A478 L_6 = ___other0;
+		GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* L_7 = L_6.___windows_3;
+		__this->___windows_3 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___windows_3), (void*)L_7);
 		return;
 	}
 }
@@ -10265,7 +10410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutCache_ResetCursor_m728841782E13F82
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_2 = __this->___layoutGroups_2;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(14 /* System.Collections.IEnumerator System.Collections.Stack::GetEnumerator() */, L_2);
+		L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(16 /* System.Collections.IEnumerator System.Collections.Stack::GetEnumerator() */, L_2);
 		V_0 = L_3;
 	}
 	{
@@ -11178,7 +11323,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIUtility_ResetGlobalState_mD0A482A3133
 		GenericStack_t1FB49AB7D847C97ABAA97AB232CA416CABD24C49* L_0;
 		L_0 = GUI_get_scrollViewStates_m940A384A713B8A7DC67016D1588965A42E561773_inline(NULL);
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(11 /* System.Void System.Collections.Stack::Clear() */, L_0);
+		VirtualActionInvoker0::Invoke(13 /* System.Void System.Collections.Stack::Clear() */, L_0);
 		return;
 	}
 }
@@ -23569,6 +23714,13 @@ IL_001d:
 	{
 		float L_9 = V_2;
 		return L_9;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LayoutCache_get_id_mC223564DD70C5633178B4A99121331CA58F866A1_inline (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___U3CidU3Ek__BackingField_0;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutCache_set_id_m532720FF0F65E8039E37D015910E2F1AE1C9F4FB_inline (LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60* __this, int32_t ___value0, const RuntimeMethod* method) 

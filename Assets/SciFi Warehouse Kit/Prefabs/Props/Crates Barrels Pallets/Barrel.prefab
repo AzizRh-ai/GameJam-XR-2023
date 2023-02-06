@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfc86c482f22644898be9ab4746a500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 8300000, guid: 740c53dda44e2bd4895dab34cd1eeac9, type: 3}
+  hitSound: {fileID: 8300000, guid: f085920a69724f34892a55a4cd43a8bc, type: 3}
   audioSource: {fileID: 8581591536007610628}
   winPoint: {fileID: 0}
 --- !u!82 &8581591536007610628
