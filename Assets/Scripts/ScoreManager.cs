@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     [SerializeField] private GameMenuController gameMenuController;
 
-    private float time = 2555;
+    private float time = 20;
     private bool timeIsRunning = false;
     private float timertick = 0f;
     int score = 0;
@@ -19,7 +19,28 @@ public class ScoreManager : MonoBehaviour
     public AudioClip gameOverAudio;
     public AudioClip timerTickAudio;
     public AudioSource gameOverSound;
+    [SerializeField] private TextMeshProUGUI StartText;
+    [SerializeField] private TextMeshProUGUI StartButton;
 
+    public void OnStartMenu(int count)
+    {
+        //  Texte à choisir, à changer :
+        if (count == 1)
+        {
+            StartText.text = " You should hit everything, it's very simple.";
+            StartButton.text = "Next";
+        }
+        else if (count == 2)
+        {
+            StartText.text = " However, be careful because some object..";
+            StartButton.text = "Next";
+        }
+        else
+        {
+            StartText.text = "It's okay ? You can Play !";
+            StartButton.text = "Play !";
+        }
+    }
 
     private void Awake()
     {
