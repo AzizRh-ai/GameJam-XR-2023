@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     [SerializeField] private GameMenuController gameMenuController;
 
-    private float time = 40f;
+    private float time = 20;
     private bool timeIsRunning = false;
     private float timertick = 0f;
     int score = 0;
@@ -27,17 +27,17 @@ public class ScoreManager : MonoBehaviour
         //  Texte à choisir, à changer :
         if (count == 1)
         {
-            StartText.text = " you managed to escape after days experimentations on your adorable monster body,       humans have done terrible things to you";
+            StartText.text = " You should hit everything, it's very simple.";
             StartButton.text = "Next";
         }
         else if (count == 2)
         {
-            StartText.text = "now it's time to       MAKE THEM PAY !!";
+            StartText.text = " However, be careful because some object..";
             StartButton.text = "Next";
         }
         else
         {
-            StartText.text = "Destroy all you can, let the rage talk !            (please make sure you don't destroy anything IRL)";
+            StartText.text = "It's okay ? You can Play !";
             StartButton.text = "Play !";
         }
     }
