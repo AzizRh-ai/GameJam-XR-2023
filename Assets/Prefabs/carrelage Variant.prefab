@@ -11,10 +11,14 @@ GameObject:
   - component: {fileID: 1338823988561184347}
   - component: {fileID: 2682930175854316030}
   - component: {fileID: 206982575693626676}
-  - component: {fileID: 5328284120432167500}
   - component: {fileID: 721039916494002647}
+<<<<<<< HEAD
   - component: {fileID: 2621301022953606681}
   - component: {fileID: 9169159872073226033}
+=======
+  - component: {fileID: 5328284120432167500}
+  - component: {fileID: 6979642759783659565}
+>>>>>>> 3165f7b89fb97251fc3699e8891897fca555782b
   m_Layer: 0
   m_Name: carrelage Variant
   m_TagString: Untagged
@@ -87,6 +91,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &721039916494002647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864391282777283809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.009121, y: 17.144714, z: 2.6673305}
+  m_Center: {x: 0, y: 0, z: 1.3336955}
 --- !u!54 &5328284120432167500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -103,16 +120,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &721039916494002647
-BoxCollider:
+--- !u!114 &6979642759783659565
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864391282777283809}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
+<<<<<<< HEAD
   serializedVersion: 2
   m_Size: {x: 10.009121, y: 17.144714, z: 2.6673305}
   m_Center: {x: 0, y: 0, z: 1.3336955}
@@ -228,3 +244,9 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9789773fc01dde4a8da8cb3b3abb864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> 3165f7b89fb97251fc3699e8891897fca555782b

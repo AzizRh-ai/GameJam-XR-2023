@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 /*-----------------------------------------------
     -Filename    : GameMenuController
@@ -14,14 +15,42 @@ public class GameMenuController : MonoBehaviour
     // Ajout UI depuis Unity: Canvas 
     [SerializeField] private GameObject WristMenu;
     [SerializeField] private GameObject EndMenu;
+    [SerializeField] private ScoreManager scriptScoreManager;
+    [SerializeField] private XRInteractorLineVisual XrLine;
+    [SerializeField] private GameObject StartMenu;
+    private bool isActiveStartMenuUi = true;
+    private int countNext = 0;
 
     // Variable boolean pour l'état du menu
-    private bool isActiveWristUi = true;
+    private bool isActiveWristUi = false;
 
     private void Start()
     {
+        isActiveWristUi = false;
         // On disable le menu au lancement
-        ShowUiWristMenu();
+        Time.timeScale = 0;
+        StartMenu.SetActive(true);
+        XrLine.enabled = true;
+        OnStart();
+        //ShowUiWristMenu();
+    }
+
+    public void OnStart()
+    {
+        countNext++;
+        if (countNext < 4)
+        {
+            scriptScoreManager.OnStartMenu(countNext);
+            XrLine.enabled = true;
+        }
+        else
+        {
+            isActiveStartMenuUi = false;
+            isActiveWristUi = false;
+            StartMenu.SetActive(false);
+            XrLine.enabled = false;
+            Time.timeScale = 1;
+        }
     }
 
     public void PauseButtonPressed(InputAction.CallbackContext context)
@@ -33,13 +62,16 @@ public class GameMenuController : MonoBehaviour
 
     public void ShowUiWristMenu()
     {
-        // affiche ou pas le menu suivant la valeur de isActiveWristUI
-        WristMenu.SetActive(!isActiveWristUi);
-        isActiveWristUi = !isActiveWristUi;
+        if (isActiveStartMenuUi == false)
+        {
+            // affiche ou pas le menu suivant la valeur de isActiveWristUI
+            WristMenu.SetActive(!isActiveWristUi);
+            isActiveWristUi = !isActiveWristUi;
 
-        //src = https://docs.unity3d.com/ScriptReference/Time-timeScale.html
-        // si true alors valeur 0 = pause sinon on contiue 
-        Time.timeScale = isActiveWristUi ? 0f : 1.0f;
+            //src = https://docs.unity3d.com/ScriptReference/Time-timeScale.html
+            // si true alors valeur 0 = pause sinon on contiue 
+            Time.timeScale = isActiveWristUi ? 0f : 1.0f;
+        }
     }
 
     public void RestartGame()
