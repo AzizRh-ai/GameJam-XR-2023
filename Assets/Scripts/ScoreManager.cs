@@ -27,18 +27,18 @@ public class ScoreManager : MonoBehaviour
         //  Texte à choisir, à changer :
         if (count == 1)
         {
-            StartText.text = " You should hit everything, it's very simple.";
+            StartText.text = "After days of capture and torture, you manage to escape";
             StartButton.text = "Next";
         }
         else if (count == 2)
         {
-            StartText.text = " However, be careful because some object..";
+            StartText.text = "humans have done triible things to you, now :";
             StartButton.text = "Next";
         }
         else
         {
-            StartText.text = "It's okay ? You can Play !";
-            StartButton.text = "Play !";
+            StartText.text = "It's time to MAKE THEM PAY !!!";
+            StartButton.text = "Let's Go !";
         }
     }
 

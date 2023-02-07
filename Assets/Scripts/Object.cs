@@ -30,14 +30,14 @@ public class Object : MonoBehaviour
             if (gameObject.CompareTag("plusCent"))
             {
                 Debug.Log("+100 points");
-                ScoreManager.instance.AddTime(2f);
+                ScoreManager.instance.AddTime(1f);
                 ScoreManager.instance.IncScore(100);
             }
 
             else if (gameObject.CompareTag("plus500"))
             {
                 ScoreManager.instance.IncScore(500);
-                ScoreManager.instance.AddTime(4f);
+                ScoreManager.instance.AddTime(5f);
                 Destroy(gameObject, 1f);
             }
 

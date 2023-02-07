@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 1481700309667762125}
   - component: {fileID: 5164652404148187956}
   - component: {fileID: 4186585888488271252}
-  - component: {fileID: 5058946163269062513}
+  - component: {fileID: 1986422708}
   - component: {fileID: 1876898378}
   - component: {fileID: 2356061961667859782}
   - component: {fileID: 6927839662799139125}
-  - component: {fileID: 1986422708}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: plusCent
@@ -102,7 +101,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.43301296, y: 8.999221, z: 0.43953782}
   m_Center: {x: -0.00000017881393, y: 4.5003905, z: 0.00000051409006}
---- !u!114 &5058946163269062513
+--- !u!114 &1986422708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,44 +269,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1986422708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6886093935241627624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91fc9178a0b0c3d4bb8b6d91b16d9893, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerOptions:
-    triggerType: 0
-    minimumCollisionForce: 0
-    filterCollisionsByTag: 1
-    triggerAllowedTags:
-    - Projectile
-    triggerKey: 0
-  fractureOptions:
-    fragmentCount: 10
-    xAxis: 1
-    yAxis: 1
-    zAxis: 1
-    detectFloatingFragments: 0
-    asynchronous: 0
-    insideMaterial: {fileID: 2100000, guid: 5d82eb612157cf846bf67968cdb100a7, type: 2}
-    textureScale: {x: 1, y: 1}
-    textureOffset: {x: 0, y: 0}
-  refractureOptions:
-    enableRefracturing: 0
-    maxRefractureCount: 1
-    invokeCallbacks: 0
-  callbackOptions:
-    onFracture:
-      m_PersistentCalls:
-        m_Calls: []
-    onCompleted:
-      m_PersistentCalls:
-        m_Calls: []
-  currentRefractureCount: 0

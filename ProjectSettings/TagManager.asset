@@ -12,15 +12,16 @@ TagManager:
   - Restart
   - plusCent
   - plus500
+  - walls
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - player
   - Water
   - UI
-  - 
-  - 
+  - walls
+  - Monstre
   - 
   - 
   - 
