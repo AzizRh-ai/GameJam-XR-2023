@@ -32,7 +32,7 @@ public class ScoreManager : MonoBehaviour
         }
         else if (count == 2)
         {
-            StartText.text = "humans have done triible things to you, now :";
+            StartText.text = "humans have done terrible things to you, now :";
             StartButton.text = "Next";
         }
         else
