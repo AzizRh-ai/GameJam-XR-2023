@@ -10,7 +10,7 @@ A Vr game developped By students from Simplon school during 5 days febuary 2023.
 
 --------------------------gameplay exemple------------------
 
-https://youtu.be/BnFsPautk6U
+https://youtube.com/shorts/OM7loXB872c
 
 ------------------------------Ressources-------------------
 
