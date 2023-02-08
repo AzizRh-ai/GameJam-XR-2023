@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR;
 
-public class Object : MonoBehaviour
+public class Objectz : MonoBehaviour
 {
     [SerializeField] private AudioClip hitSound;
     [SerializeField] private AudioSource audioSource;
